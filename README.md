@@ -2,7 +2,7 @@
 This example demonstrates how to show the Sqlite database data to Chart.
 Please refer KB links for more details,
 
-[How to bind SQLite Database to Chart in Xamarin](https://www.syncfusion.com/kb/11267/how-to-bind-sqlite-database-to-chart-in-xamarin)
+[How to bind SQLite Database to Xamarin.Forms Sfchart](https://www.syncfusion.com/kb/11267/how-to-bind-sqlite-database-to-chart-in-xamarin)
 
 Let us start learning how to work with the Xamarin.Forms Chart using the SQLite database with the following steps:
 

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Chart_Sqlite_Sample"
+             x:Class="Chart_Sqlite_Sample.AddChartDataPage">
+    <ContentPage.BindingContext>
+        <local:ChartDataModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+            <Label Text="XValue"/>
+            <Entry Text="{Binding XValue}"/>
+
+            <Label Text="YValue"/>
+            <Entry Keyboard="Numeric" Text="{Binding YValue}"/>
+
+            <Button Text="Save" Clicked="Insert_Clicked"/>
+
+            <Button Text="Delete" Clicked="Delete_Clicked"/>
+
+            <Button Text="Cancel" Clicked="Cancel_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content></ContentPage>

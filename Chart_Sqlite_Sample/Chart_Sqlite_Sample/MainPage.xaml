@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Chart_Sqlite_Sample"
+             x:Class="Chart_Sqlite_Sample.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="Pink"/>
+                <Setter Property="Margin" Value="0,20,0,0"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            <local:ValueConvert x:Key="ValueConvert"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Orientation="Vertical" Margin="0,100,0,0">
+        <Button  Text="Generate Chart" Clicked="GenerateHandle_Clicked" />
+        <Button Margin="0,20,0,0" Text="Insert Chart Data"  Clicked="Insert_Clicked"  />
+        <ListView x:Name="listView" Margin="40,20,40,40" Header="" HorizontalOptions="Center" VerticalOptions="Center" SeparatorColor="#ceecf4" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid BackgroundColor="#ceecf4" ColumnSpacing="0"  RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0"  Text="{Binding XValue}"/>
+                            <Label Grid.Column="1"  Text="{Binding YValue}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.HeaderTemplate>
+                <DataTemplate>
+                    <Grid BackgroundColor="#75d9e9" ColumnSpacing="0"  RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label TextColor="White" Grid.Column="0" Text="XValue"/>
+                        <Label TextColor="White" Grid.Column ="1" Text="YValue"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

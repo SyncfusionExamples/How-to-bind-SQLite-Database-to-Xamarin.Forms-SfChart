@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="8c21faa9-51bb-4e67-9395-35ddb4b5ce31"
-    Publisher="CN=86f532ce-74b4-476a-b345-b9f4f922c13a"
+    Name="98e0b893-2127-4698-b419-722884290af3"
+    Publisher="CN=dc745d5a-0527-4214-85ac-6b02d6958be9"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Chart_Sqlite_Sample.UWP</DisplayName>
-    <PublisherDisplayName>86f532ce-74b4-476a-b345-b9f4f922c13a</PublisherDisplayName>
+    <PublisherDisplayName>dc745d5a-0527-4214-85ac-6b02d6958be9</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

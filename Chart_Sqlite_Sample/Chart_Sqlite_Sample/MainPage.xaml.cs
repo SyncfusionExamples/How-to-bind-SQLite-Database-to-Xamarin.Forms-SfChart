@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,10 +14,11 @@ namespace Chart_Sqlite_Sample
         {
             InitializeComponent();
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            listView.ItemsSource =  App.Database.GetChartDataModel();
+            listView.ItemsSource = App.Database.GetChartDataModel();
         }
         private void Insert_Clicked(object sender, EventArgs e)
         {

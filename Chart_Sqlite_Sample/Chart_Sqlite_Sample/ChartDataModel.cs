@@ -1,4 +1,7 @@
 ﻿using SQLite;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Chart_Sqlite_Sample
 {

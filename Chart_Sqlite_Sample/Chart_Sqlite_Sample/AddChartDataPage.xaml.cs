@@ -9,10 +9,10 @@ using Xamarin.Forms.Xaml;
 
 namespace Chart_Sqlite_Sample
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AddChartDataPage : ContentPage
-	{
-		public AddChartDataPage ()
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AddChartDataPage : ContentPage
+    {
+        public AddChartDataPage()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace Chart_Sqlite_Sample
 
         private void Cancel_Clicked(object sender, EventArgs e)
         {
-             Navigation.PopAsync();
+            Navigation.PopAsync();
         }
     }
 }
